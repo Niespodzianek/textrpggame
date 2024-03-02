@@ -26,6 +26,7 @@ class Gracz:
 
 # inicjalizacja gry
 zawodnik = Gracz(pozycja=mapa_gry[22], zdrowie=12, sila=20)
+
 def program():
     #ruch_gracza()
     zawodnik.prezentacja()
