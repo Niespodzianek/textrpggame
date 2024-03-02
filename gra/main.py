@@ -23,7 +23,7 @@ def ruch_gracza():
                 print("Koniec mapy. Wybierz jeszcze raz inny kierunek.")
             else:
                 zawodnik.pozycja = mapa_gry[zawodnik.pozycja[kierunek]]
-                zawodnik.sila = zawodnik.sila - 1clear
+                zawodnik.sila = zawodnik.sila - 1
                 ruch = False
     zawodnik.prezentacja()
 
