@@ -21,17 +21,20 @@ class Gracz:
                     self.sila = self.sila - 1
                     ruch = False
 
-    def prezentacja(self):
-        print(f"Gracz {self.imie} znajduje się na pozycji {self.pozycja['nazwa']}, ma siłę {self.sila} i zdrowie {self.zdrowie}")
+    def __repr__(self):
+        return f"<Gracz {self.imie} znajduje się na pozycji {self.pozycja['nazwa']}, ma siłę {self.sila} i zdrowie {self.zdrowie}>"
+
+    def __str__(self):
+        return f"Gracz {self.imie} znajduje się na pozycji {self.pozycja['nazwa']}, ma siłę {self.sila} i zdrowie {self.zdrowie}"
 
 # inicjalizacja gry
 zawodnik = Gracz(pozycja=mapa_gry[22], zdrowie=12, sila=20)
 
 def program():
     #ruch_gracza()
-    zawodnik.prezentacja()
+    print(repr(zawodnik))
     zawodnik.ruch_gracza()
-    zawodnik.prezentacja()
+    print(zawodnik)
 
 program()
 print("KONIEC PRACY PROGRAMU")
