@@ -11,7 +11,7 @@ class Gracz:
         ruch = True
         while ruch:
             kierunek = input("W którym kierunku chcesz się poruszyć: góra, prawo, dół, lewo\n> ")
-            if kierunek not in ["góra", "dół", "prawo", "lewo"]:
+            if kierunek not in ["góra", "dół", "prawo", "lewo"]:
                 print("Zły wybór. Jeszcze raz.")
             else:
                 if self.pozycja[kierunek] == 0:
@@ -28,7 +28,7 @@ class Gracz:
         return f"Gracz {self.imie} znajduje się na pozycji {self.pozycja['nazwa']}, ma siłę {self.sila} i zdrowie {self.zdrowie}"
 
 # inicjalizacja gry
-zawodnik = Gracz(pozycja=mapa_gry[22], zdrowie=12, sila=20)
+zawodnik = Gracz(pozycja=mapa_gry[11], zdrowie=12, sila=20)
 
 def program():
     #ruch_gracza()
@@ -40,4 +40,4 @@ program()
 print("KONIEC PRACY PROGRAMU")
 
 # TODO 1 - kolorowanie literek w oknie terminala
-# TODO 2 - poruszanie sie pomiędzy polami mapy
+# TODO 2 - poruszanie sie pomiędzy polami mapy - wykonane
